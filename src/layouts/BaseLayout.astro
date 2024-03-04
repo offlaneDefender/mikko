@@ -1,0 +1,21 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import BaseHeader from "../components/BaseHeader.astro";
+
+const titleAddress = "CMircea"
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{titleAddress}</title>
+	</head>
+	<body class="bg-ctp-crust p-6">
+		<BaseHeader />
+		<slot />
+	</body>
+</html>
+
+<ViewTransitions />
