@@ -1,10 +1,11 @@
 ---
-interface Props {
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
     text: string;
-    href: string;
 }
-const {text, href} = Astro.props
+const {text, ...attrs} = Astro.props
 ---
-<a href={href} class="hover:bg-ctp-surface hover:border-ctp-peach border border-transparent flex items-center justify-center px-1 rounded">
+<a class="hover:bg-ctp-surface hover:border-ctp-peach border border-transparent flex items-center justify-center px-1 rounded" {...attrs}>
     <p class="text-ctp-text">{text}</p>
 </a>
