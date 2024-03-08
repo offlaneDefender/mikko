@@ -6,5 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: "https://offlanedefender.github.io",
-  base: "/mikko"
+  base: "/mikko",
+  prefetch: true
 });

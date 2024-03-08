@@ -1,0 +1,36 @@
+---
+import CurrentTech from "./CurrentTech.astro";
+import Dislikes from "./Dislikes.astro";
+import LearningTech from "./LearningTech.astro";
+import Likes from "./Likes.astro";
+import PastTech from "./PastTech.astro";
+---
+
+<div class="flex flex-col p-4 gap-4 items-center justify-center">
+    <section class="flex flex-col gap-1 text-ctp-text">
+        <h2 class="text-2xl mx-auto">About me</h2>
+        <p>
+            Hi! I'm <strong>Mircea (a.k.a. Mikko)</strong>. I'm a software
+            developer and (hobbyist) photographer.
+        </p>
+    </section>
+
+    <section
+        class="grid grid-flow-row md:grid-flow-col place-content-center gap-x-10 md:gap-x-20"
+    >
+        <Likes />
+        <Dislikes />
+    </section>
+
+    <section class="flex flex-col gap-1 text-ctp-text">
+        <CurrentTech />
+    </section>
+
+    <section class="flex flex-col gap-1 text-ctp-text">
+        <PastTech />
+    </section>
+
+    <section class="flex flex-col gap-1 text-ctp-text">
+        <LearningTech />
+    </section>
+</div>
