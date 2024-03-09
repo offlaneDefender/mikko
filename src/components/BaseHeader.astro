@@ -1,21 +1,29 @@
 ---
-import NavItem from "./NavItem.astro"
+import NavItem from "./NavItem.astro";
 ---
 
 <header class="flex w-full items-center justify-evenly">
     <nav>
         <ul class="flex flex-row gap-4">
             <li>
-                <NavItem href="/mikko" text="Home" /> 
+                <NavItem href="/mikko" text="Home" data-astro-prefetch />
             </li>
             <li>
-                <NavItem href="/mikko/work" text="Work" />
+                <NavItem href="/mikko/work" text="Work" data-astro-prefetch />
             </li>
             <li>
-                <NavItem href="/mikko/hobbies" text="Hobbies" />
+                <NavItem
+                    href="/mikko/hobbies"
+                    text="Hobbies"
+                    data-astro-prefetch
+                />
             </li>
             <li>
-                <NavItem href="/mikko/contact" text="Contact" />
+                <NavItem
+                    href="/mikko/contact"
+                    text="Contact"
+                    data-astro-prefetch
+                />
             </li>
         </ul>
     </nav>
